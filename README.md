@@ -44,22 +44,24 @@ LeetCode와 프로그래머스를 활용한 SQL 코딩 테스트 스터디입니
 ```
 week01/
   jiyun/
-    lc_second_highest_salary.sql
-    pg_우유와요거트.sql
+    1-1.sql
+    1-2.sql
   other_member/
+    1-1.sql
 week02/
+  jiyun/
+    2-1.sql
 ```
 
 ---
 
 ## 파일명 규칙
 
-- LeetCode SQL: `lc_<problem_name>.sql`
-- Programmers SQL: `pg_<problem_name>.sql`
+- 파일명은 주차-문제번호.sql 형식으로 작성한다.
 
-<be></be>
+  - 예: `1-1.sql`, `1-2.sql`
 
-- problem_name은 `snake_case` 사용
+- 확장자는 `.sql`로 통일한다.
 - 공백, 특수문자 사용 금지
 
 ---
@@ -74,10 +76,5 @@ week02/
 
 ## 커밋 메시지 규칙
 
-- 커밋 메시지는 해결한 문제 이름을 작성한다.
-- `solve: problem_name`
-
-예:
-
-- `solve: second highest salary`
-- `solve: milk and yogurt`
+- 커밋 메시지는 `weekXX 본인이름` 형식으로 작성한다.
+  - 예: `week01 김지윤`

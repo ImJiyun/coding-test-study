@@ -20,3 +20,7 @@
 8. [있었는데요 없었습니다](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
 
 9. [없어진 기록 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
+
+10. [식품분류별 가장 비싼 식품의 정보 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/131116)
+
+11. [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/description/)

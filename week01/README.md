@@ -1,6 +1,7 @@
 # 1주차 스터디
 
 ## 2025년 12월 30일
+
 1. [오랜 기간 보호한 동물(1)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
 
 2. [자동차 대여 기록에서 대여중 / 대여 가능 여부 구분하기](https://school.programmers.co.kr/learn/courses/30/lessons/157340)
@@ -22,5 +23,3 @@
 9. [없어진 기록 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
 
 10. [식품분류별 가장 비싼 식품의 정보 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/131116)
-
-11. [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/description/)

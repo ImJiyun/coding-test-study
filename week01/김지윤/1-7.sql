@@ -1,0 +1,14 @@
+-- 코드를 작성해주세요
+SELECT 
+    t1.ITEM_ID,
+    t1.ITEM_NAME
+FROM 
+    ITEM_INFO AS t1
+LEFT JOIN
+    ITEM_TREE AS t2
+ON 
+    t1.ITEM_ID = t2.ITEM_ID
+WHERE 
+    t2.PARENT_ITEM_ID IS NULL
+ORDER BY
+    ITEM_ID

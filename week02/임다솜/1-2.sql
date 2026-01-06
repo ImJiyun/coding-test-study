@@ -1,0 +1,20 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/298519
+
+SELECT
+    FISH_COUNT,
+    MAX_LENGTH,
+    FISH_TYPE
+FROM (
+SELECT
+    COUNT(*) AS FISH_COUNT,
+    MAX(LENGTH) AS MAX_LENGTH,
+    FISH_TYPE,
+    SUM(IF(LENGTH IS NULL, 10, LENGTH)) AS t
+FROM FISH_INFO
+GROUP BY
+    FISH_TYPE
+) AS base
+WHERE
+    t / FISH_COUNT >= 33
+ORDER BY
+    FISH_TYPE

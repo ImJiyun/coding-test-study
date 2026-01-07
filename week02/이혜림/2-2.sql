@@ -1,0 +1,24 @@
+-- 컬럼 : 잡은 수 'FISH_COUNT', 최대 길이 'MAX_LENGTH', 물고기의 종류 'FISH_TYPE'
+-- 테이블 : FISH_INFO
+-- 그룹 : 물고기 종류별
+-- 조건 : 평균 길이가 33cm이상
+-- 정렬 : 물고기 종류 오름차순
+
+SELECT
+    FISH_COUNT,
+    MAX_LENGTH,
+    FISH_TYPE
+FROM(
+SELECT
+    COUNT(ID) AS FISH_COUNT,
+    MAX(LENGTH) AS MAX_LENGTH,
+    FISH_TYPE,
+    SUM(IF(LENGTH IS NULL, 10, LENGTH)) AS LENG_SUM
+FROM FISH_INFO
+GROUP BY
+    FISH_TYPE
+) AS base
+WHERE
+    LENG_SUM / FISH_COUNT >= 33
+ORDER BY
+    FISH_TYPE

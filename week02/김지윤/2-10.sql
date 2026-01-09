@@ -1,0 +1,19 @@
+-- 코드를 입력하세요
+# SELECT
+#     *,
+#     DATEDIFF(END_DATE, START_DATE) AS time_diff
+# FROM
+#     CAR_RENTAL_COMPANY_CAR AS t1
+# LEFT JOIN
+#     CAR_RENTAL_COMPANY_RENTAL_HISTORY AS t2
+# ON 
+#     t1.CAR_ID = t2.CAR_ID
+# WHERE
+#     t1.CAR_TYPE = '트럭'
+
+SELECT
+    *
+FROM
+    CAR_RENTAL_COMPANY_DISCOUNT_PLAN 
+WHERE
+    car_type = '트럭'

@@ -1,3 +1,4 @@
+-- 컬럼
 WITH base AS(
     SELECT
         *,

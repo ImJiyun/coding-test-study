@@ -2,7 +2,6 @@
 -- 테이블 : CAR, HISTORY, PLAN
 -- JOIN KEY : CAR_ID, CAR_TYPE
 -- 조건 : 자동차 종류가 트럭 (CAR_TYPE="트럭")
-
 WITH base AS(
     SELECT DISTINCT
         c.CAR_ID,

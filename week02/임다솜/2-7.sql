@@ -1,0 +1,22 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/131124
+
+SELECT
+    m.MEMBER_NAME, 
+    r.REVIEW_TEXT, 
+    DATE_FORMAT(r.REVIEW_DATE, '%Y-%m-%d') AS REVIEW_DATE
+FROM REST_REVIEW AS r
+LEFT JOIN MEMBER_PROFILE AS m
+ON r.MEMBER_ID = m.MEMBER_ID
+WHERE r.MEMBER_ID = (
+    SELECT
+        MEMBER_ID
+    FROM REST_REVIEW
+    GROUP BY
+        MEMBER_ID
+    ORDER BY
+        COUNT(REVIEW_ID) DESC
+    LIMIT 1
+)
+ORDER BY
+    r.REVIEW_DATE,
+    r.REVIEW_TEXT

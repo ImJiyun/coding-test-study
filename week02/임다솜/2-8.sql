@@ -1,0 +1,12 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/144855
+
+SELECT
+    b.CATEGORY,
+    SUM(bs.SALES) AS TOTAL_SALES
+FROM BOOK_SALES AS bs
+LEFT JOIN BOOK AS b
+ON bs.BOOK_ID = b.BOOK_ID
+WHERE DATE_FORMAT(bs.SALES_DATE, "%Y-%m") = "2022-01"
+GROUP BY b.CATEGORY
+ORDER BY
+    b.CATEGORY

@@ -1,0 +1,19 @@
+# ¿À´ä
+
+WITH BASE AS(
+    SELECT
+        ITEM_ID,
+        ITEM_NAME,
+        RARITY,
+        RANK() OVER (ORDER BY PARENT_ITEM_ID DESC) AS R
+    FROM ITEM_INFO
+    LEFT JOIN ITEM_TREE
+    USING (ITEM_ID)
+)
+
+SELECT
+    ITEM_ID,
+    ITEM_NAME,
+    RARITY
+FROM BASE
+WHERE R = 1

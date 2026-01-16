@@ -1,0 +1,33 @@
+-- 컬럼 : 음식 종류, ID, 식당 이름, 즐겨찾기 수
+-- 테이블 : REST_INFO
+-- 그룹 : FOOD_TYPE
+-- 조건 : 즐겨찾기수가 가장 많은
+-- 정렬 : FOOD_TYPE DESC
+
+-- 첫번째 시도 실패..
+# SELECT
+#     FOOD_TYPE,
+#     REST_ID,
+#     REST_NAME,
+#     MAX_FAV AS FAVORITES
+# FROM (
+#     SELECT
+#         REST_ID,
+#         MAX(FAVORITES) OVER(PARTITION BY FOOD_TYPE) AS MAX_FAV
+#     FROM REST_INFO
+#     GROUP BY REST_ID
+# ) a
+# JOIN REST_INFO b
+# USING(REST_ID)
+# GROUP BY FOOD_TYPE
+# ORDER BY FAVORITES DESC
+
+-- 두번째 시도 ing
+SELECT
+    FOOD_TYPE,
+    REST_ID,
+    REST_NAME,
+    MAX(FAVORITES) OVER(PARTITION BY FOOD_TYPE) AS FAVORITES
+FROM REST_INFO
+GROUP BY FOOD_TYPE
+ORDER BY FOOD_TYPE DESC

@@ -1,0 +1,23 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/164668
+
+WITH base AS(
+SELECT
+    WRITER_ID AS USER_ID,
+    SUM(PRICE) AS TOTAL
+FROM USED_GOODS_BOARD
+WHERE 
+    STATUS = "DONE"
+GROUP BY
+    WRITER_ID
+)    
+    
+SELECT
+    b.USER_ID,
+    u.NICKNAME,
+    b.TOTAL
+FROM base AS b
+LEFT JOIN USED_GOODS_USER AS u
+ON b.USER_ID = u.USER_ID
+WHERE b.TOTAL >= 700000
+ORDER BY
+    TOTAL

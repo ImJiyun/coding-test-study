@@ -20,4 +20,5 @@ SELECT
         END) 
         / (SELECT COUNT(DISTINCT player_id) FROM Activity),
     2) AS fraction
-FROM add_previous_date;
+FROM 
+    add_previous_date

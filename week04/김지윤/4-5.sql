@@ -1,4 +1,15 @@
 # SUBSTRING(STRING, start_point, extract_num) : STRING에서 start_point 위치에서 extract_num만큼 추출 
+WITH order_more_than_3 AS (
+    SELECT
+        WRITER_ID
+    FROM
+        USED_GOODS_BOARD 
+    GROUP BY
+        WRITER_ID
+    HAVING
+        COUNT(WRITER_ID) >= 3
+)
+
 SELECT
     USER_ID,
     NICKNAME,

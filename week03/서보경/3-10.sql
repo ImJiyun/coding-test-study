@@ -1,0 +1,17 @@
+# GROUOP BY 사용이 어려움
+SELECT
+    FOOD_TYPE,
+    REST_ID,
+    REST_NAME,
+    FAVORITES
+FROM (
+        SELECT 
+        FOOD_TYPE, 
+        REST_ID, 
+        REST_NAME, 
+        FAVORITES,
+        RANK() OVER(PARTITION BY FOOD_TYPE ORDER BY FAVORITES DESC) AS ranking
+        FROM REST_INFO
+) AS base
+WHERE ranking = 1
+ORDER BY FOOD_TYPE DESC;

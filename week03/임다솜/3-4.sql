@@ -1,0 +1,1 @@
+-- https://leetcode.com/problems/consecutive-numbers/?envType=problem-list-v2&envId=database

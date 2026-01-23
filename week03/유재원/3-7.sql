@@ -1,4 +1,3 @@
-
 SELECT
     DEPT_ID,
     DEPT_NAME_EN,

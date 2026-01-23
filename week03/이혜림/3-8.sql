@@ -2,24 +2,13 @@
 -- 컬럼 : id, num
 -- 테이블 : RequestAccepted
 
--- WITH BASE AS(
     SELECT
-        A.requester_id,
-        COUNT(B.accepter_id) AS cnt
-        -- A.requester_id AS id,
-        -- COUNT(B.accepter_id) AS cnt
+        A.requester_id AS id,
+        COUNT(B.accepter_id)+1 AS num
     FROM RequestAccepted A
     LEFT JOIN RequestAccepted B
     ON A.requester_id = B.accepter_id
     GROUP BY
         A.requester_id
-    -- ORDER BY cnt DESC 
-    -- LIMIT 1
--- )
--- SELECT
---     id,
---     cnt AS num
--- FROM BASE
--- GROUP BY id, cnt
--- ORDER BY cnt
--- LIMIT 1
+    ORDER BY num DESC 
+    LIMIT 1

@@ -1,0 +1,1 @@
+-- 3. 앞선 Weekly Retention에서 retention_rate 컬럼을 추가해주세요

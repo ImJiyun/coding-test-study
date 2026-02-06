@@ -1,5 +1,9 @@
 def solution(num_list):
-    answer = 0
-    if (num_list % 2 = )
-    return answer
-// 미완성
+    odd = ""
+    even = ""
+    for num in num_list:
+        if num % 2 != 0:
+         odd += str(num)
+        else:
+         even += str(num)
+    return int(odd) + int(even)

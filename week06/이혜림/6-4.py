@@ -1,9 +1,7 @@
 def solution(a, b):
-    answer = 0
-    ab = str(a)+str(b)
-    ba = str(b)+str(a)
-    if int(ab) >= int(ba):
-        answer = int(ab)
+    ab = int(str(a)+str(b))
+    ba = int(str(b)+str(a))
+    if ab >= ba:
+        return ab
     else:
-        answer = int(ba)
-    return answer
+        return ba

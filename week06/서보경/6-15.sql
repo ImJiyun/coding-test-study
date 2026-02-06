@@ -1,5 +1,3 @@
-#틀림
-
 SELECT
     YEAR(os.SALES_DATE) AS YEAR,
     MONTH(os.SALES_DATE) AS MONTH,

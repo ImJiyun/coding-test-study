@@ -29,3 +29,7 @@
 12. [대장균들의 자식의 수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/299305)
 
 13. [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/description/)
+
+14. [우유와 요거트가 담긴 장바구니](https://school.programmers.co.kr/learn/courses/30/lessons/62284)
+
+15. [상품을 구매한 회원 비율 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/131534)

@@ -21,3 +21,11 @@
 9. [이어 붙인 수](https://school.programmers.co.kr/learn/courses/30/lessons/181928)
 
 10. [홀짝에 따라 다른 값 반환하기](https://school.programmers.co.kr/learn/courses/30/lessons/181935)
+
+## 2026년 2월 6일
+
+11. [헤비 유저가 소유한 장소](https://school.programmers.co.kr/learn/courses/30/lessons/77487)
+
+12. [대장균들의 자식의 수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/299305)
+
+13. [Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/description/)

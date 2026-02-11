@@ -6,6 +6,8 @@ def solution(n):
     return cnt
 
 def is_prime(n):
+    if n < 2:
+        return False
     for num in range(2, n//2 + 1):
         if n % num == 0:
             return False

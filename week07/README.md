@@ -25,3 +25,13 @@
 11. [7의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120912)
 
 12. [k의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120887)
+
+## 2026년 2월 12일
+
+13. [보호소에서 중성화한 동물](https://school.programmers.co.kr/learn/courses/30/lessons/59045)
+
+14. [서울에 위치한 식당 목록 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/131118)
+
+15. [오프라인/온라인 판매 데이터 통합하기](https://school.programmers.co.kr/learn/courses/30/lessons/131537)
+
+16. [Tree Node](https://leetcode.com/problems/tree-node/description/)

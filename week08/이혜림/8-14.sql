@@ -1,0 +1,14 @@
+-- 문제 : 각 세대별 자식이 없는 개체의 수(COUNT)와 세대(GENERATION)를 출력
+-- 컬럼 : COUNT, GENERATION
+-- 테이블 : ECOLI_DATA
+-- 정렬 : 세대 오름차순
+
+-- ing..
+SELECT
+	P.ID,
+	COUNT(C.ID) AS CHILD_COUNT
+FROM ECOLI_DATA P
+LEFT JOIN ECOLI_DATA C
+	ON P.ID = C.PARENT_ID
+GROUP BY P.ID
+ORDER BY P.ID

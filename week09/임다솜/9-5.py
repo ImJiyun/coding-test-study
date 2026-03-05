@@ -1,0 +1,8 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181885
+
+def solution(todo_list, finished):
+    answer = []
+    for x in range(len(todo_list)):
+        if not finished[x]:
+            answer.append(todo_list[x])
+    return answer

@@ -1,6 +1,6 @@
 # 9주차 스터디
 
-## 2026년 3월 5일 
+## 2026년 3월 5일
 
 1. [A 강조하기](https://school.programmers.co.kr/learn/courses/30/lessons/181874)
 
@@ -21,3 +21,11 @@
 9. [x 사이의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/181867)
 
 10. [rny_string](https://school.programmers.co.kr/learn/courses/30/lessons/181863)
+
+## 2026년 3월 6일
+
+11. [FrontEnd 개발자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/276035)
+
+12. [Movie Rating](https://leetcode.com/problems/movie-rating/description/)
+
+13. [DNA Pattern Recognition](https://leetcode.com/problems/dna-pattern-recognition/description/)

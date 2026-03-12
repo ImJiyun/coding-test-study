@@ -21,3 +21,11 @@
 9. [숨어있는 숫자의 덧셈 (2)](https://school.programmers.co.kr/learn/courses/30/lessons/120864)
 
 10. [2의 영역](https://school.programmers.co.kr/learn/courses/30/lessons/181894)
+
+## 2026년 3월 12일
+
+11. [Restaurant Growth](https://leetcode.com/problems/restaurant-growth/description/)
+
+12. [연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/284528)
+
+13. [Seasonal Sales Analysis](https://leetcode.com/problems/seasonal-sales-analysis/description/)

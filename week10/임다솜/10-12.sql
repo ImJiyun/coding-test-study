@@ -23,7 +23,7 @@ SELECT
         WHEN g.score >= 96 THEN e.SAL * 0.2
         WHEN g.score >= 90 THEN e.SAL * 0.15
         WHEN g.score >= 80 THEN e.SAL * 0.1
-        ELSE e.SAL
+        ELSE 0
     END AS BONUS
 FROM grade AS g
 LEFT JOIN HR_EMPLOYEES AS e

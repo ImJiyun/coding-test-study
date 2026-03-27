@@ -21,3 +21,11 @@
 9. [문자열 여러 번 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/181913)
 
 10. [수열과 구간 쿼리 2](https://school.programmers.co.kr/learn/courses/30/lessons/181923)
+
+## 2026년 3월 27일
+
+11. [특정 세대의 대장균 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/301650)
+
+12. [Analyze Subscription Conversion](https://leetcode.com/problems/analyze-subscription-conversion/description/)
+
+13. [Find Product Recommendation Pairs](https://leetcode.com/problems/find-product-recommendation-pairs/description/)
